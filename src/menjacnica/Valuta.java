@@ -18,12 +18,15 @@ public class Valuta {
 	}
 
 	public void setKursNaDan(LinkedList<Kurs> kursNaDan) {
+		if(kursNaDan == null) throw new RuntimeException("Kurs na dan ne moze biti null!");
 		this.kursNaDan = kursNaDan;
 	}
 	public void setNaziv(String naziv) {
+		if(naziv == null || naziv.isEmpty()) throw new RuntimeException("Naziv ne sme biti prazan ili null");
 		this.naziv = naziv;
 	}
 	public void setOznaka(String oznaka) {
+		if(oznaka == null || naziv.isEmpty()) throw new RuntimeException("Oznaka ne sme biti prazna ili null");
 		this.oznaka = oznaka;
 	}
 	@Override

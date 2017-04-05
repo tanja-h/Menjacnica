@@ -22,15 +22,19 @@ public class Kurs {
 	}
 	
 	public void setDatum(GregorianCalendar datum) {
+		if(datum == null) throw new RuntimeException("Datum ne sme biti null");
 		this.datumKursa = datum;
 	}
 	public void setProdajniKurs(double prodajniKurs) {
+		if(prodajniKurs <= 0) throw new RuntimeException("Kurs mora biti veci od 0");
 		this.prodajniKurs = prodajniKurs;
 	}
 	public void setKupovniKurs(double kupovniKurs) {
+		if(kupovniKurs <= 0) throw new RuntimeException("Kurs mora biti veci od 0");
 		this.kupovniKurs = kupovniKurs;
 	}
 	public void setSrednjiKurs(double srednjiKurs) {
+		if(srednjiKurs <= 0) throw new RuntimeException("Kurs mora biti veci od 0");
 		this.srednjiKurs = srednjiKurs;
 	}
 	
