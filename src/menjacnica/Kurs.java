@@ -85,8 +85,8 @@ public class Kurs {
 	}
 	@Override
 	public String toString() {
-		return "Kurs [datumKursa=" + datumKursa + ", prodajniKurs=" + prodajniKurs + ", kupovniKurs=" + kupovniKurs
-				+ ", srednjiKurs=" + srednjiKurs + "]";
+		return "Kurs [datumKursa: " + datumKursa + ", prodajniKurs: " + prodajniKurs + ", kupovniKurs: " + kupovniKurs
+				+ ", srednjiKurs: " + srednjiKurs + "]";
 	}
 	
 }
